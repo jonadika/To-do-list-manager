@@ -6,7 +6,7 @@ int main (){
     int nextBlankTodoIndex = 0;
     string pergjigjja;
     perseritja:
-    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show' per te shtuar todos ne liste shtyp 'add'" << endl;
+    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show' per te shtuar todos ne liste shtyp 'add' per te fshire/perfunduar nje todo, shtyp 'delete' " << endl;
     cin >> pergjigjja;
     while (pergjigjja != "exit"){
         if (pergjigjja == "show") {
@@ -25,8 +25,12 @@ int main (){
             nextBlankTodoIndex++; 
 
         }
-
-
+        else if (pergjigjja == "delete"){
+            int indeksi;
+            cout << "Tregoni numrin e indeksit te todo-s deshironi te fshini" << endl;
+            cin >> indeksi;
+            todos[indeksi] = " ";
+        } 
         goto perseritja;
     }
    return 0;
