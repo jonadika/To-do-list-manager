@@ -2,9 +2,8 @@
 using namespace std;
 
 int main (){
-    string todos [100] = {"todo 1", "todo 2"};
+    string todos [100];
     string pergjigjja;
-    int numeruesi;
     perseritja:
     cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show'; Per te shtuar todos, shtyp 'Add';"
     << "  Per te fshire/perfunduar todos shtyp 'Delete' " << endl;
