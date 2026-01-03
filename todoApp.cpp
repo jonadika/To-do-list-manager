@@ -2,7 +2,7 @@
 using namespace std;
 
 int main (){
-    string todos [100];
+    string todos [100] = {"todo 1", "todo 2"};
     string pergjigjja;
     int numeruesi;
     perseritja:
@@ -13,11 +13,12 @@ int main (){
         if (pergjigjja == "show") {
             cout << "lista e todos eshte: "<< endl;
             for(int i=0; i<100; i++){
-                cout << todos[i] << endl;
+                if (todos[i] != "") {
+                    cout << todos[i] << endl;
+                }
             }
         }
         
-
         goto perseritja;
     }
    return 0;
