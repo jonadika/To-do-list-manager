@@ -2,7 +2,7 @@
 using namespace std;
 
 int main (){
-    string todos [100]={"todo1", "todo2"};
+    string todos [100];
     int nextBlankTodoIndex = 0;
     string pergjigjja;
     perseritja:
