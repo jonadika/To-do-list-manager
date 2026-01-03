@@ -6,7 +6,7 @@ int main (){
     int nextBlankTodoIndex = 0;
     string pergjigjja;
     perseritja:
-    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show'" << endl;
+    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show' per te shtuar todos ne liste shtyp 'add'" << endl;
     cin >> pergjigjja;
     while (pergjigjja != "exit"){
         if (pergjigjja == "show") {
@@ -19,7 +19,7 @@ int main (){
 
         } else if (pergjigjja == "add") {
             string todo;
-            cout << "shkruaj todo: " << endl;
+            cout << "shkruaj todo pa hapesira mes fjaleve: " << endl;
             cin >> todo;
             todos [nextBlankTodoIndex] = todo;
             nextBlankTodoIndex++; 
