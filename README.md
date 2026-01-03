@@ -5,11 +5,37 @@
 
 - Qëllimi i këtij projekti është të mësojmë se si GitHub mundëson bashkëpunimin në të njëjtin projekt, ndarjen e ideve dhe krijimin e një programi sa më profesional në mënyrë të organizuar.
 
-* Si të ekzekutoni programin:
-1. Shkarkoni skedarët e projektit nga GitHub.
-2. Hapni projektin në një IDE C++ (p.sh. Code::Blocks, Visual Studio, Dev-C++) ose një editor teksti me compiler.
-3. compile dhe ekzekutoni  ```main.cpp```.
-4. Ndiqni udhëzimet në ekran për të shtuar, larguar ose shfaqur elementet e vargut.
+* Për të punuar me këtë projekt në kompjuterin tuaj lokal:
+1. Klono repository-n:
+git clone https://github.com/jonadika/To-do-list-manager/blob/main/README.md
 
+2. Hyni në folderin e projektit:
+cd projekti/To-Do-list-manager 
+
+* Si të kontribuoni :)
+ 
+1. Fork repository-n.
+
+2. Krijo një branch të ri për ndryshimet:
+```git branch feature/emri-i-ndryshimit```
+
+3. Kalo në atë branch:
+```git checkout feature/emri-i-ndryshimit``` 
+
+4. Bëni ndryshimet dhe commit:
+
+```git commit -m "Përshkrim i ndryshimit"```
+
+5. Dërgo branch-in në repository tënd:
+
+```git push origin feature/emri-i-ndryshimit```
+
+6. Hap një Pull Request në repository-n origjinal.
+
+
+* Rregulla të përgjithshme:
+- Sigurohu që funksionaliteti ekzistues nuk prishet.
+- Testo çdo funksion para se të bësh pull request.
+- Ndiq stilin ekzistues të kodit.
 
 Autor: Jona Dika, Melisa Rama
