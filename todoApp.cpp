@@ -3,9 +3,10 @@ using namespace std;
 
 int main (){
     string todos [100]={"todo1", "todo2"};
+    int nextBlankTodoIndex = 0;
     string pergjigjja;
     perseritja:
-    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show',  per te fshire/perfunduar nje todo, shtyp 'delete' " << endl;
+    cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show' per te shtuar todos ne liste shtyp 'add' per te fshire/perfunduar nje todo, shtyp 'delete' " << endl;
     cin >> pergjigjja;
     while (pergjigjja != "exit"){
         if (pergjigjja == "show") {
@@ -15,6 +16,14 @@ int main (){
                     cout << todos[i] << endl;
                 }
             }
+
+        } else if (pergjigjja == "add") {
+            string todo;
+            cout << "shkruaj todo pa hapesira mes fjaleve: " << endl;
+            cin >> todo;
+            todos [nextBlankTodoIndex] = todo;
+            nextBlankTodoIndex++; 
+
         }
         else if (pergjigjja == "delete"){
             int indeksi;
