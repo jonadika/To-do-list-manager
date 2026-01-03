@@ -3,6 +3,7 @@ using namespace std;
 
 int main (){
     string todos [100];
+    int nextBlankTodoIndex = 0;
     string pergjigjja;
     perseritja:
     cout << "Cfare veprimi deshironi te kryeni?- Per te shiquar listen e todos, shtyp 'show'" << endl;
@@ -15,7 +16,17 @@ int main (){
                     cout << todos[i] << endl;
                 }
             }
+
+        } else if (pergjigjja == "add") {
+            string todo;
+            cout << "shkruaj todo: " << endl;
+            cin >> todo;
+            todos [nextBlankTodoIndex] = todo;
+            nextBlankTodoIndex++; 
+
         }
+
+
         goto perseritja;
     }
    return 0;
